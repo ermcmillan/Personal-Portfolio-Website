@@ -27,19 +27,13 @@ p
 
 .site-heading
 {
-    margin-top:5rem;margin-bottom:5rem;text-transform:uppercase;line-height:1;font-family:Raleway
-
-}
-
-.site-heading .site-heading-upper
-{
-    display:block;font-size:2rem;font-weight:800
+    margin-top:2rem;margin-bottom:1rem;line-height:1;font-family:Raleway
 
 }
 
 .site-heading .site-heading-lower
 {
-    font-size:5rem;font-weight:100;line-height:4rem
+    font-size:5rem;font-weight:200;line-height:4rem
 
 }
 
@@ -62,7 +56,7 @@ p
 
 .section-heading .section-heading-lower
 {
-    display:block;font-size:3rem;font-weight:100
+    display:block;font-size:3rem;font-weight:200
 }
 
 .bg-faded
@@ -78,7 +72,11 @@ p
 
 }
 
-#mainNav .navbar-brand{color:#e6a756}
+    #mainNav .navbar-brand {
+        color: #543624;
+        width: 100%;
+        display: inline-block;
+    }
 
     #mainNav .navbar-nav {
         display: flex;
@@ -86,22 +84,24 @@ p
         align-items: center;
     }
 
-    #mainNav .navbar-nav .nav-item {
-        text-align: center
-    }
-    #mainNav .navbar-nav .nav-item .nav-link {
-        color: rgba(255,255,255,.7);
-        font-weight: 800;
-    }
+        #mainNav .navbar-nav .nav-item .nav-link {
+            color: rgba(255,255,255,.7);
+            font-weight: 800;
+            text-align: center
+        }
+
 #mainNav .navbar-nav .nav-item.active .nav-link {
         color: #543624
 }
-@media (min-width:992px){
-    #mainNav .navbar-nav .nav-item .nav-link{font-size:.9rem}
-    #mainNav .navbar-nav .nav-item .nav-link:hover{color:rgba(255,255,255,.4)}
-    #mainNav .navbar-nav .nav-item.active .nav-link:hover {
-        color: #543624
+
+@media (min-width: 992px) {
+    #mainNav .navbar-nav .nav-item .nav-link {
+        font-size: 1.0rem;
     }
+
+        #mainNav .navbar-nav .nav-item .nav-link:hover {
+            color: #543624
+        }
 }
 
 .btn-xl{font-weight:700;font-size:.8rem;padding-top:1.5rem;padding-bottom:1.5rem;padding-left:2rem;padding-right:2rem}
@@ -154,7 +154,26 @@ p
     background-color: #543624;
     border-color: #543624
 }
-.btn-primary:active,
-.btn-primary:focus,
-.btn-primary:hover{background-color:#df902a;border-color:#df902a}
+    .btn-primary:active,
+    .btn-primary:focus,
+    .btn-primary:hover {
+        background-color: rgb(201, 187, 174);
+        border-color: rgb(201, 187, 174)
+    }
 .font-weight-light{font-weight:100!important}
+
+/* Round social media button */
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+    color: #543624
+}
+
+    /* Add a hover effect */
+    .fa:hover {
+        color: rgb(173, 143, 126)
+    }

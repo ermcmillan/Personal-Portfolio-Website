@@ -21,19 +21,34 @@
     <!-- Custom styles for this template -->
     <link href="css/business-casual.min.css" rel="stylesheet">
 
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 </head>
 
 <body>
 
-    <h1 class="site-heading text-center text-white d-none d-lg-block">
-        <!--      <span class="site-heading-upper text-color: rgba(255,255,255,.7) mb-3">Digital Portfolio</span> -->
-        <span class="site-heading-lower text-primary">El McMillan</span>
-    </h1>
+    <!-- Website Heading -->
+    <div class="site-heading">
+        <h1 class="text-center text-white d-none d-lg-block">
+            <span class="site-heading-lower text-primary">EL McMILLAN</span>
+        </h1>
+        <!-- Social Media Buttons -->
+        <p class="text-center text-white d-none d-lg-block">
+            <a href="mailto:ermcmillan@crimson.ua.edu" target="_blank" class="fa fa-envelope"></a>
+
+            <a href="https://github.com/ermcmillan" target="_blank" class="fa fa-github"></a>
+
+            <a href="https://www.linkedin.com/in/elmcmillan/" target="_blank" class="fa fa-linkedin"></a>
+
+            <a href="https://emvisualmerchandising.tumblr.com/" target="_blank" class="fa fa-tumblr"></a>
+        </p>
+    </div>
 
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-dark py-lg-4" id="mainNav">
         <div class="container">
-            <a class="navbar-brand text-uppercase text-expanded font-weight-bold d-lg-none" href="#">Start Bootstrap</a>
+            <a class="navbar-brand text-uppercase text-expanded font-weight-bold d-lg-none" asp-page="/Index">El McMillan</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -71,17 +86,23 @@
                         <a class="nav-link text-uppercase text-expanded" asp-page="/Inspiration">Inspiration &amp; Style</a>
                     </li>
 
+                    <li class="nav-item px-lg-4">
+                        <a class="nav-link text-uppercase text-expanded" asp-page="/Contact">Contact</a>
+                    </li>
+
                 </ul>
             </div>
         </div>
     </nav>
 
+    <!-- Body -->
     <div class="container">
         <main role="main" class="pb-3">
             @RenderBody()
         </main>
     </div>
 
+    <!-- Footer -->
     <footer class="footer text-center py-5">
         <div class="container">
             <p class="m-0 small">Copyright &copy; - El McMillan 2020</p>
