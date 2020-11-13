@@ -183,21 +183,17 @@ p
     }
 .font-weight-light{font-weight:100!important}
 
-/* Round social media button */
-.fa {
+#header-icons .fa {
     padding: 20px;
-    font-size: 30px;
-    width: 30px;
     text-align: center;
-    text-decoration: none;
-    border-radius: 50%;
     color: #543624
 }
 
     /* Add a hover effect to social media buttons */
-    .fa:hover {
+    #header-icons .fa:hover {
         color: rgb(173, 143, 126)
     }
+
 
     /* Makes PDF responsive */
 .embed-responsive {
@@ -212,4 +208,16 @@ object {
     width: auto;
     height: auto;
 }
-    
+
+/* Contact icon formatting */
+
+.contact-icons .fa {
+    vertical-align: middle;
+    color: #543624
+}
+
+    .contact-icons .fa:hover {
+        color: rgb(201, 187, 174);
+    }
+
+
