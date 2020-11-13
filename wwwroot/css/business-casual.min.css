@@ -78,6 +78,7 @@ p
         display: inline-block;
     }
 
+ 
     #mainNav .navbar-nav {
         display: flex;
         justify-content: center;
@@ -116,19 +117,39 @@ p
 @media (min-width:1200px){
     .intro .intro-text{width:45%}}
 
+#holdresbuttons {
+    text-align:center;
+}
+
+.res-button {
+    display: inline-block
+}
+
 .cta {
-    padding-top: 5rem;
-    padding-bottom: 5rem;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
     background-color: rgb(201, 187, 174)
 }
 
-.cta .cta-inner{position:relative;padding:3rem;margin:.5rem;background-color:rgba(255,255,255,.85)}
+.cta .cta-inner{position:relative;padding:2rem;margin:.5rem;background-color:rgba(255,255,255,.85)}
 
 .cta .cta-inner:before{border-radius:.5rem;content:'';position:absolute;top:-.5rem;bottom:-.5rem;left:-.5rem;right:-.5rem;border:.25rem solid rgba(255,255,255,.85);z-index:-1}
 
 @media (min-width:992px){
     .about-heading .about-heading-img{position:relative;z-index:0}
     .about-heading .about-heading-content{margin-top:-5rem;position:relative;z-index:1}}
+
+@media (min-width:992px) {
+    .contact-heading .contact-heading-img {
+        margin-top: 3rem;
+        position: relative;
+    }
+
+    .contact-heading .contact-heading-content {
+        margin-top: 3rem;
+        position: relative;
+    }
+}
 
 @media (min-width:992px){
     .product-item .product-item-title{position:relative;z-index:1;margin-bottom:-3rem}
@@ -173,7 +194,22 @@ p
     color: #543624
 }
 
-    /* Add a hover effect */
+    /* Add a hover effect to social media buttons */
     .fa:hover {
         color: rgb(173, 143, 126)
     }
+
+    /* Makes PDF responsive */
+.embed-responsive {
+    position: relative;
+    display: block;
+    height: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+object {
+    width: auto;
+    height: auto;
+}
+    
